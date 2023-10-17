@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Hero Page</title>
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .page {
+            text-align: center;
+            padding: 50px;
+        }
+
+        
+        .menu-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .menu-line .logo {
+            font-size: 24px;
+        }
+
+        .menu-line nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu-line nav ul li {
+            margin-right: 20px;
+        }
+
+        .menu-line nav ul li:last-child { 
+            margin-right: 0px;
+        }
+           
+        
+
+        .menu-line nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230612/pngtree-photos-of-nike-ball-with-rain-on-it-image_2952081.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #f5f5f5;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #fcfcfc;
+        }
+
+        /* Add the new section with alternating blocks here */
+        .alternate-section {
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(135deg, rgba(4, 9, 30, 0.0), rgba(4, 9, 30, 0.7)), url('https://www.hdwallpapers.in/download/black_white_nike_shoe_in_grey_background_hd_nike-HD.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .alternate-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            color: #fff;
+        }
+
+        .alternate-block:nth-child() {
+            flex-direction: row-reverse;
+        }
+
+        .alternate-image {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .alternate-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .alternate-content {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .alternate-h2 {
+            font-size: 35px;
+        }
+
+        .alternate-p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header class="menu-line">
+        <div class="logo">NIKE</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Just Do It</h1>
+            <p>Your actions start from every step you make.</p>
+            <a href="#" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="page" id="about">
+        <h2>About Us</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error nihil ipsa mollitia?</p>
+    </section>
+
+    <section class="page" id="contact">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas eveniet tenetur, sit culpa quaerat vel.</p>
+    </section>
+
+    <!-- Add the new section with alternating blocks here -->
+    <section class="alternate-section" id="alternate">
+        <div class="alternate-block">
+            <div class="alternate-image">
+                <svg viewBox="-1 0 255 255" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style> .cls-3 { fill: #a4c1e9; } .cls-4 { fill: #1c8cea; } .cls-5 { fill: #4762e1; } .cls-6 { fill: #ff436f; } </style> </defs> <g id="sneakers"> <path d="M36.939,41.904 C36.939,41.904 66.654,18.074 81.829,9.260 C96.655,0.650 105.854,-3.002 113.110,2.818 C120.365,8.637 115.064,30.091 127.792,42.819 C140.520,55.547 148.324,53.058 158.282,52.141 C169.451,51.112 183.418,50.946 191.035,58.563 C201.856,69.384 188.436,128.716 205.584,170.612 C216.349,196.916 249.398,232.292 249.398,232.292 C249.398,232.292 233.151,248.587 233.151,248.587 C233.151,248.587 151.126,200.503 151.126,200.503 C151.126,200.503 92.437,97.973 92.437,97.973 C92.437,97.973 36.939,41.904 36.939,41.904 Z" id="path-1" class="cls-3" fill-rule="evenodd"></path> <path d="M32.893,37.000 C32.893,37.000 65.123,7.423 74.375,9.492 C83.628,11.560 88.951,30.615 92.437,41.404 C96.122,52.814 100.860,74.902 99.063,86.631 C98.033,93.351 93.144,97.266 93.144,97.266 C93.144,97.266 32.893,37.000 32.893,37.000 Z" id="path-2" class="cls-4" fill-rule="evenodd"></path> <path d="M236.686,252.122 C227.048,261.761 166.451,245.527 139.813,218.888 C139.813,218.888 7.584,86.659 7.584,86.659 C-4.913,74.162 -0.879,43.514 11.826,38.576 C26.955,32.696 31.282,29.748 37.282,35.748 C37.282,35.748 69.526,67.992 93.851,92.316 C118.175,116.641 135.109,173.172 156.783,194.847 C176.227,214.290 215.214,235.056 228.201,239.394 C234.505,241.500 239.749,236.332 243.050,233.030 C244.745,231.335 247.985,228.066 251.123,231.204 C253.889,233.970 251.952,236.857 249.414,239.394 C244.919,243.890 238.511,250.298 236.686,252.122 Z" id="path-3" class="cls-5" fill-rule="evenodd"></path> <path d="M92.437,102.216 C89.312,105.340 84.247,105.340 81.123,102.216 C81.123,102.216 14.881,36.974 14.881,36.974 C26.776,32.221 30.527,28.326 37.282,35.748 C37.282,35.748 69.526,67.992 93.851,92.316 C95.225,93.691 96.573,95.181 97.903,96.749 C97.903,96.749 92.437,102.216 92.437,102.216 Z" id="path-4" class="cls-6" fill-rule="evenodd"></path> </g> </g></svg>
+            </div>
+            <div class="alternate-content">
+                <h2 class="alternate-h2">Comfortable shoes</h2>
+                <p class="alternate-p">Go for a hiking, explore new places</p>
+            </div>
+        </div>
+        <div class="alternate-block">
+            <div class="alternate-content">
+                <h2 class="alternate-h2">Sport shoes</h2>
+                <p class="alternate-p">Become a champion</p>
+            </div>
+            <div class="alternate-image">
+                <svg viewBox="-1 0 255 255" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style> .cls-3 { fill: #213045; } .cls-4 { fill: #2a343c; } .cls-5 { fill: #000000; } .cls-6 { fill: #ababab; } </style> </defs> <g id="sneakers"> <path d="M36.939,41.904 C36.939,41.904 66.654,18.074 81.829,9.260 C96.655,0.650 105.854,-3.002 113.110,2.818 C120.365,8.637 115.064,30.091 127.792,42.819 C140.520,55.547 148.324,53.058 158.282,52.141 C169.451,51.112 183.418,50.946 191.035,58.563 C201.856,69.384 188.436,128.716 205.584,170.612 C216.349,196.916 249.398,232.292 249.398,232.292 C249.398,232.292 233.151,248.587 233.151,248.587 C233.151,248.587 151.126,200.503 151.126,200.503 C151.126,200.503 92.437,97.973 92.437,97.973 C92.437,97.973 36.939,41.904 36.939,41.904 Z" id="path-1" class="cls-3" fill-rule="evenodd"></path> <path d="M32.893,37.000 C32.893,37.000 65.123,7.423 74.375,9.492 C83.628,11.560 88.951,30.615 92.437,41.404 C96.122,52.814 100.860,74.902 99.063,86.631 C98.033,93.351 93.144,97.266 93.144,97.266 C93.144,97.266 32.893,37.000 32.893,37.000 Z" id="path-2" class="cls-4" fill-rule="evenodd"></path> <path d="M236.686,252.122 C227.048,261.761 166.451,245.527 139.813,218.888 C139.813,218.888 7.584,86.659 7.584,86.659 C-4.913,74.162 -0.879,43.514 11.826,38.576 C26.955,32.696 31.282,29.748 37.282,35.748 C37.282,35.748 69.526,67.992 93.851,92.316 C118.175,116.641 135.109,173.172 156.783,194.847 C176.227,214.290 215.214,235.056 228.201,239.394 C234.505,241.500 239.749,236.332 243.050,233.030 C244.745,231.335 247.985,228.066 251.123,231.204 C253.889,233.970 251.952,236.857 249.414,239.394 C244.919,243.890 238.511,250.298 236.686,252.122 Z" id="path-3" class="cls-5" fill-rule="evenodd"></path> <path d="M92.437,102.216 C89.312,105.340 84.247,105.340 81.123,102.216 C81.123,102.216 14.881,36.974 14.881,36.974 C26.776,32.221 30.527,28.326 37.282,35.748 C37.282,35.748 69.526,67.992 93.851,92.316 C95.225,93.691 96.573,95.181 97.903,96.749 C97.903,96.749 92.437,102.216 92.437,102.216 Z" id="path-4" class="cls-6" fill-rule="evenodd"></path> </g> </g></svg>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
